@@ -14,7 +14,9 @@ import { NgxPaginationModule } from 'ngx-pagination';
 import { Ng2SearchPipeModule } from 'ng2-search-filter';
 import { Ng2OrderModule } from 'ng2-order-pipe';
 import { EmployeeService } from './employee.service';
-
+import {QuestionPaperComponent} from './question-paper/question-paper.component';
+import {TestwebComponent} from './testweb/testweb.component';
+import {FlipkartComponent} from './flipkart/flipkart.component';
 
 @NgModule({
   declarations: [
@@ -23,6 +25,9 @@ import { EmployeeService } from './employee.service';
     EmployeeCreateComponent,
     EmployeeUpdateComponent,
     EmployeeDetailsComponent, 
+    QuestionPaperComponent,
+    TestwebComponent,
+    FlipkartComponent
     // FileSelectDirective
   ],
   imports: [

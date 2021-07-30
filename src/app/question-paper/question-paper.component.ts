@@ -18,7 +18,7 @@ export class Option{
 
   export class Options{
 OptionData:Option[]=[];
-QuestionId:number;
+QuestionId:number=0;
   }
 
 @Component({
