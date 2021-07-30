@@ -1,0 +1,37 @@
+<h2>Employee-list</h2>
+<nav class="navbar">
+  <!-- [(ngModel)]="filter" -->
+ Search: <input class="form-control" type="text" name="search" >      
+</nav>
+<table class="table table-striped">
+   <thead>
+     <tr>
+       <th (click)="sort('firstname')">Firstname
+        <span class="glyphicon sort-icon" *ngIf="key =='firstname'" [ngClass]="{'glyphicon-chevron-up':reverse,'glyphicon-chevron-down':!reverse}"></span>
+       </th>
+       <th (click)="sort('lastname')">Lastname
+        <span class="glyphicon sort-icon" *ngIf="key =='lastname'" [ngClass]="{'glyphicon-chevron-up':reverse,'glyphicon-chevron-down':!reverse}"></span>
+       </th>
+       <th (click)="sort('emailid')">emailId
+        <span class="glyphicon sort-icon" *ngIf="key =='emailid'" [ngClass]="{'glyphicon-chevron-up':reverse,'glyphicon-chevron-down':!reverse}"></span>
+       </th>
+       <th>Actions</th>
+     </tr>
+   </thead>
+   <tbody>
+    <!-- | filter:filter; let i = index -->
+     <tr *ngFor="let employee of employees | paginate:{itemsPerPage: 3, currentPage:page} | orderBy: key : reverse ">
+       <td>{{employee.firstName}}</td>
+       <td>{{employee.lastName}}</td>
+       <td>{{employee.emailId}}</td>
+       <td>
+         <a (click)="updateEmployee(employee.id)" class="btn btn-info">Update</a>
+         <a (click)="deleteEmployee(employee.id)" class="btn btn-danger" style="margin-left: 10px;">Delete</a>
+         <a (click)="employeeDetails(employee.id)" class="btn btn-danger" style="margin-left: 10px;">View</a>
+       </td>
+     </tr>
+     <div id="pagination">
+      <pagination-controls (pageChange)="page=$event"></pagination-controls>
+    </div>  
+   </tbody>
+</table>
