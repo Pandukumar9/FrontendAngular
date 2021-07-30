@@ -1,0 +1,110 @@
+.image{
+  border-top-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+h2{
+  color: rgba(18, 18, 148, 0.712);
+  font-weight: bold;
+}
+.hst{
+  color: rgb(13, 247, 255);
+}
+.box-body{
+text-align: right;
+}
+.row{
+  margin-top: 11px;
+  
+}
+.col-md-3{
+  margin-left: -36px;
+  margin-top: 6px;
+}
+.col-md-2{
+  margin-top: 6px;
+}
+sup{
+  color: black;
+  font-size: 18px;
+  top: -0.7em;
+}
+.submtbtn{
+  width: 100%;
+  background-color:rgb(45, 27, 145);
+  padding: 16px;
+}
+.id1{
+  background-color: rgba(202, 202, 202,0.2);
+  padding-bottom: 60px;
+  padding-top: 60px;
+}
+.container {
+  position: relative;
+  margin: 0 auto; /* Center it */
+}
+
+.container .content {
+  position: absolute; /* Position the background text */
+  bottom: 0; /* At the bottom. Use top:0 to append it to the top */
+  background: rgba(0, 0, 0, 0.5); /* Black background with 0.5 opacity */
+  color: #f1f1f1; /* Grey text */
+  width: 47%; /* Full width */
+  height: 400px;
+  padding: 20px; /* Some padding */
+}
+.para{
+  margin-top: 38px;
+  font-size: 36px;
+  margin-left: 40px;
+}
+.size{
+  margin-left: -50px; 
+}
+.form-control{
+  padding: 27px;
+}
+h3{
+  font-size: 40px;
+  text-align: center;
+  color: rgb(24, 24, 99);
+}
+
+.hero { 	
+  background-color:rgba(240, 240, 240, 0.822);
+  position: relative;
+  height: 320px;
+  width: 100%;
+  border-radius: 30px;
+}
+
+
+.hero:after {
+  border-right: solid 50px transparent;
+  border-left: solid 50px transparent;
+  border-top: solid 50px #5b82a1;
+  transform: translateX(-50%);
+  position: absolute;
+  z-index: -1;
+  content: '';
+  top: 100%;
+  left: 50%;
+  height: 0;
+  width: 0;
+}
+.box1{
+  background-color: #5b82a1;
+  padding-top: 10px;
+  margin-top: 102px;
+  padding-bottom: 70px;
+  border-bottom-right-radius: 30px;
+  border-bottom-left-radius: 30px;
+}
+.custm{
+  text-align: center;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: bold;
+}
+
+.intent {
+text-align: center;
+}

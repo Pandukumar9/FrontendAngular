@@ -1,0 +1,87 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+.flipkrt{
+  background-color: #2874f0;
+  padding: 8px;
+}
+
+form.example input[type=text] {
+  padding: 5px;
+  font-size: 17px;
+  width: 92%;
+  float: left;
+  border-radius: 2px 0 0 2px;
+  border: 0 none;
+  outline: 0 none;
+  margin-top: 4px;
+}
+/* Style the submit button */
+ form.example button {
+  width: 8%;
+  float: left;
+  padding: 5px;
+  background-color:#ffffff;
+  color: #2196F3;
+  font-size: 17px;
+  border-radius: 0 2px 2px 0;
+  border: 0 none;
+  outline: 0 none;
+  margin-top: 4px;
+}
+.dropdown {
+  display: inline-block;
+}
+.dropdown:hover .dropdown-menu {
+  display: block;
+}
+.links {
+  color: #2196F3;
+  background-color: white;
+  text-decoration: none;
+  margin-left: 44px;
+  padding: 5px 25px;
+}
+.more{
+  color: white;
+}
+.col-md-2{
+  margin-top: 10px;
+}
+.cart-button {
+  color: #FFFFFF;
+  text-decoration: none;
+  font-size: 20px;
+  margin-left: 5px;
+}
+.dropdwn1,.dropdwn2{
+  background-color: white;
+  border: 0 none;
+  outline: 0 none;
+  justify-content: center;
+}
+.dropdwn1:hover,.dropdwn2:hover{
+  color: #2196F3;
+}
+.img32{
+  width: 1420px;
+  height: 400px;
+}
+.deal{
+  margin-left: 15px;
+}
+.left{
+  margin-top: 8px;
+  float: left;
+}
+.day1{
+  margin-top: 12px;
+}
+.abcd{
+  margin-left: 680px;
+  padding: 8px 15px;
+  background-color:#2196F3;
+  color: white;
+}
